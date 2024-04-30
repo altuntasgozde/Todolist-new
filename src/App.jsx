@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { Button } from './Components/Button';
+import { BsXLg } from "react-icons/bs";
 
 function App() {
   const [inputValue, setInputValue] = useState('');
@@ -62,10 +63,11 @@ function App() {
                   </p>
                 </div>
                 <span
-                  className='cursor-pointer'
+                  className='cursor-pointer mt-1'
                   onClick={() => deleteInput(index)}
                 >
-                  X
+                  <BsXLg />
+                  
                 </span>
               </div>
             ))}
